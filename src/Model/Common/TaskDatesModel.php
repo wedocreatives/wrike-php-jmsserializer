@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Common;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Task Dates Model.
@@ -25,7 +25,7 @@ class TaskDatesModel extends AbstractModel implements ResourceModelInterface
      *
      * Task Dates, Enum: Backlog, Milestone, Planned
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\TaskDatesTypeEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\TaskDatesTypeEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("type")

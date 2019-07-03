@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Folder;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Folder;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\CustomFieldModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\ProjectModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\CustomFieldModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\ProjectModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Folder Resource Model.
@@ -229,7 +229,7 @@ class FolderResourceModel extends AbstractModel implements ResourceModelInterfac
      * Metadata entries are isolated on per-client (application) basis
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel>")
      * @SA\SerializedName("metadata")
      *
      * @var array|MetadataModel[]|null
@@ -241,7 +241,7 @@ class FolderResourceModel extends AbstractModel implements ResourceModelInterfac
      *
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\CustomFieldModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\CustomFieldModel>")
      * @SA\SerializedName("customFields")
      *
      * @var array|CustomFieldModel[]|null
@@ -266,7 +266,7 @@ class FolderResourceModel extends AbstractModel implements ResourceModelInterfac
      *
      * Comment: Optional
      *
-     * @SA\Type("Zibios\WrikePhpJmsserializer\Model\Common\ProjectModel")
+     * @SA\Type("wedocreatives\WrikePhpJmsserializer\Model\Common\ProjectModel")
      * @SA\SerializedName("project")
      *
      * @var ProjectModel|null

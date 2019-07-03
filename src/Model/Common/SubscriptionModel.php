@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Common;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Common;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Subscription Model.
@@ -25,7 +25,7 @@ class SubscriptionModel extends AbstractModel implements ResourceModelInterface
      *
      * Enum: Free, Premium, Business, CreativeBusiness, Enterprise, CreativeEnterprise
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\SubscriptionTypeEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\SubscriptionTypeEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("type")

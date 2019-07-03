@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Dependency;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Dependency;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Dependency Resource Model.
@@ -61,7 +61,7 @@ class DependencyResourceModel extends AbstractModel implements ResourceModelInte
      *
      * Dependency relation type, Enum: StartToStart, StartToFinish, FinishToStart, FinishToFinish
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\DependencyRelationTypeEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\DependencyRelationTypeEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("relationType")

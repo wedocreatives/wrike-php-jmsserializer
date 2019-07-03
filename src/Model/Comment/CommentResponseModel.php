@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Comment;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Comment;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Comment Response Model.
@@ -33,7 +33,7 @@ class CommentResponseModel extends AbstractModel implements ResponseModelInterfa
     /**
      * Collection of response models.
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Comment\CommentResourceModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Comment\CommentResourceModel>")
      * @SA\SerializedName("data")
      *
      * @var array|CommentResourceModel]|null

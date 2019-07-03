@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Workflow;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Workflow;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\CustomStatusModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\CustomStatusModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Workflow Resource Model.
@@ -69,7 +69,7 @@ class WorkflowResourceModel extends AbstractModel implements ResourceModelInterf
      * ID and group cannot be set simultaneously in request parameter,
      * but ID is required for update, and group is required for insert
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\CustomStatusModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\CustomStatusModel>")
      * @SA\SerializedName("customStatuses")
      *
      * @var array|CustomStatusModel[]|null

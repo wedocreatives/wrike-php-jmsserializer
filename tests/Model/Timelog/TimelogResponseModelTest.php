@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Model\Timelog;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Model\Timelog;
 
-use Zibios\WrikePhpJmsserializer\Model\Timelog\TimelogResponseModel;
-use Zibios\WrikePhpJmsserializer\Tests\Model\ResponseModelTestCase;
+use wedocreatives\WrikePhpJmsserializer\Model\Timelog\TimelogResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Tests\Model\ResponseModelTestCase;
 
 /**
  * Timelog Response Model Test.

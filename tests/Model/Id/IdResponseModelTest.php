@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Model\Id;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Model\Id;
 
-use Zibios\WrikePhpJmsserializer\Model\Id\IdResponseModel;
-use Zibios\WrikePhpJmsserializer\Tests\Model\ResponseModelTestCase;
+use wedocreatives\WrikePhpJmsserializer\Model\Id\IdResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Tests\Model\ResponseModelTestCase;
 
 /**
  * Id Response Model Test.

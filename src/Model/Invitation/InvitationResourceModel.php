@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Invitation;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Invitation;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Invitation Resource Model.
@@ -80,7 +80,7 @@ class InvitationResourceModel extends AbstractModel implements ResourceModelInte
      * Invitation status
      * Enum: Pending, Accepted, Declined, Cancelled
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\InvitationStatusEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\InvitationStatusEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("status")
@@ -131,7 +131,7 @@ class InvitationResourceModel extends AbstractModel implements ResourceModelInte
      *
      * Enum: User, Collaborator
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\UserRoleEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\UserRoleEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("role")

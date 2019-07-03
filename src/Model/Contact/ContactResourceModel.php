@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Contact;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Contact;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\UserProfileModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\UserProfileModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Contact Resource Model.
@@ -61,7 +61,7 @@ class ContactResourceModel extends AbstractModel implements ResourceModelInterfa
      *
      * Enum: Person, Group
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\UserTypeEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\UserTypeEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("type")
@@ -73,7 +73,7 @@ class ContactResourceModel extends AbstractModel implements ResourceModelInterfa
     /**
      * List of user profiles in accounts accessible for requesting user.
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\UserProfileModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\UserProfileModel>")
      * @SA\SerializedName("profiles")
      *
      * @var array|UserProfileModel[]|null
@@ -150,7 +150,7 @@ class ContactResourceModel extends AbstractModel implements ResourceModelInterfa
      * Metadata entries are isolated on per-client (application) basis
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel>")
      * @SA\SerializedName("metadata")
      *
      * @var array|MetadataModel[]|null

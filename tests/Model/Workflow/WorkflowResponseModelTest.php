@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Model\Workflow;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Model\Workflow;
 
-use Zibios\WrikePhpJmsserializer\Model\Workflow\WorkflowResponseModel;
-use Zibios\WrikePhpJmsserializer\Tests\Model\ResponseModelTestCase;
+use wedocreatives\WrikePhpJmsserializer\Model\Workflow\WorkflowResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Tests\Model\ResponseModelTestCase;
 
 /**
  * Workflow Response Model Test.

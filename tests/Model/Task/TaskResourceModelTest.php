@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Model\Task;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Model\Task;
 
-use Zibios\WrikePhpJmsserializer\Model\Task\TaskResourceModel;
-use Zibios\WrikePhpJmsserializer\Tests\Model\ResourceModelTestCase;
+use wedocreatives\WrikePhpJmsserializer\Model\Task\TaskResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Tests\Model\ResourceModelTestCase;
 
 /**
  * Task Resource Model Test.

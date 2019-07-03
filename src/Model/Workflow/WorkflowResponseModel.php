@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Workflow;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Workflow;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Workflow Response Model.
@@ -33,7 +33,7 @@ class WorkflowResponseModel extends AbstractModel implements ResponseModelInterf
     /**
      * Collection of response models.
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Workflow\WorkflowResourceModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Workflow\WorkflowResourceModel>")
      * @SA\SerializedName("data")
      *
      * @var array|WorkflowResourceModel]|null

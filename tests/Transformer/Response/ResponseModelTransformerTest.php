@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,62 +9,62 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Transformer\Response;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Transformer\Response;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Zibios\WrikePhpJmsserializer\Model\Account\AccountResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Account\AccountResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Attachment\AttachmentResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Attachment\AttachmentResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Color\ColorResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Color\ColorResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Comment\CommentResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Comment\CommentResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Contact\ContactResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Contact\ContactResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\CustomField\CustomFieldResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Dependency\DependencyResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Dependency\DependencyResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Folder\FolderResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Folder\FolderResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Group\GroupResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Group\GroupResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Id\IdResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Id\IdResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Invitation\InvitationResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Invitation\InvitationResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
-use Zibios\WrikePhpJmsserializer\Model\Task\TaskResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Task\TaskResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Timelog\TimelogResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Timelog\TimelogResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\User\UserResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\User\UserResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Version\VersionResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Version\VersionResponseModel;
-use Zibios\WrikePhpJmsserializer\Model\Workflow\WorkflowResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\Workflow\WorkflowResponseModel;
-use Zibios\WrikePhpJmsserializer\SerializerFactory;
-use Zibios\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
-use Zibios\WrikePhpLibrary\Api;
-use Zibios\WrikePhpLibrary\Resource\AccountResource;
-use Zibios\WrikePhpLibrary\Resource\AttachmentResource;
-use Zibios\WrikePhpLibrary\Resource\ColorResource;
-use Zibios\WrikePhpLibrary\Resource\CommentResource;
-use Zibios\WrikePhpLibrary\Resource\ContactResource;
-use Zibios\WrikePhpLibrary\Resource\CustomFieldResource;
-use Zibios\WrikePhpLibrary\Resource\DependencyResource;
-use Zibios\WrikePhpLibrary\Resource\FolderResource;
-use Zibios\WrikePhpLibrary\Resource\GroupResource;
-use Zibios\WrikePhpLibrary\Resource\IdResource;
-use Zibios\WrikePhpLibrary\Resource\InvitationResource;
-use Zibios\WrikePhpLibrary\Resource\TaskResource;
-use Zibios\WrikePhpLibrary\Resource\TimelogResource;
-use Zibios\WrikePhpLibrary\Resource\UserResource;
-use Zibios\WrikePhpLibrary\Resource\VersionResource;
-use Zibios\WrikePhpLibrary\Resource\WorkflowResource;
+use wedocreatives\WrikePhpJmsserializer\Model\Account\AccountResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Account\AccountResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Attachment\AttachmentResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Attachment\AttachmentResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Color\ColorResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Color\ColorResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Comment\CommentResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Comment\CommentResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Contact\ContactResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Contact\ContactResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\CustomField\CustomFieldResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Dependency\DependencyResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Dependency\DependencyResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Folder\FolderResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Folder\FolderResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Group\GroupResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Group\GroupResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Id\IdResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Id\IdResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Invitation\InvitationResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Invitation\InvitationResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResponseModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\Task\TaskResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Task\TaskResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Timelog\TimelogResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Timelog\TimelogResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\User\UserResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\User\UserResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Version\VersionResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Version\VersionResponseModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Workflow\WorkflowResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Workflow\WorkflowResponseModel;
+use wedocreatives\WrikePhpJmsserializer\SerializerFactory;
+use wedocreatives\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
+use wedocreatives\WrikePhpLibrary\Api;
+use wedocreatives\WrikePhpLibrary\Resource\AccountResource;
+use wedocreatives\WrikePhpLibrary\Resource\AttachmentResource;
+use wedocreatives\WrikePhpLibrary\Resource\ColorResource;
+use wedocreatives\WrikePhpLibrary\Resource\CommentResource;
+use wedocreatives\WrikePhpLibrary\Resource\ContactResource;
+use wedocreatives\WrikePhpLibrary\Resource\CustomFieldResource;
+use wedocreatives\WrikePhpLibrary\Resource\DependencyResource;
+use wedocreatives\WrikePhpLibrary\Resource\FolderResource;
+use wedocreatives\WrikePhpLibrary\Resource\GroupResource;
+use wedocreatives\WrikePhpLibrary\Resource\IdResource;
+use wedocreatives\WrikePhpLibrary\Resource\InvitationResource;
+use wedocreatives\WrikePhpLibrary\Resource\TaskResource;
+use wedocreatives\WrikePhpLibrary\Resource\TimelogResource;
+use wedocreatives\WrikePhpLibrary\Resource\UserResource;
+use wedocreatives\WrikePhpLibrary\Resource\VersionResource;
+use wedocreatives\WrikePhpLibrary\Resource\WorkflowResource;
 
 /**
  * Response Model Transformer Test.

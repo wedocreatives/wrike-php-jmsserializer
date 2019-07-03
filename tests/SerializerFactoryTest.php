@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests;
+namespace wedocreatives\WrikePhpJmsserializer\Tests;
 
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerInterface;
-use Zibios\WrikePhpJmsserializer\SerializerFactory;
+use wedocreatives\WrikePhpJmsserializer\SerializerFactory;
 
 /**
  * Serializer Factory Test.

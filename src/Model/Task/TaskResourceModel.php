@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Task;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Task;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\CustomFieldModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\TaskDatesModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\CustomFieldModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\TaskDatesModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Task Resource Model.
@@ -142,7 +142,7 @@ class TaskResourceModel extends AbstractModel implements ResourceModelInterface
      *
      * Task Status, Enum: Active, Completed, Deferred, Cancelled
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\TaskStatusEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\TaskStatusEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("status")
@@ -156,7 +156,7 @@ class TaskResourceModel extends AbstractModel implements ResourceModelInterface
      *
      * Task Importance, Enum: High, Normal, Low
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\TaskImportanceEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\TaskImportanceEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("importance")
@@ -204,7 +204,7 @@ class TaskResourceModel extends AbstractModel implements ResourceModelInterface
     /**
      * Task dates.
      *
-     * @SA\Type("Zibios\WrikePhpJmsserializer\Model\Common\TaskDatesModel")
+     * @SA\Type("wedocreatives\WrikePhpJmsserializer\Model\Common\TaskDatesModel")
      * @SA\SerializedName("dates")
      *
      * @var TaskDatesModel|null
@@ -216,7 +216,7 @@ class TaskResourceModel extends AbstractModel implements ResourceModelInterface
      *
      * Tree Scope, Enum: WsRoot, RbRoot, WsFolder, RbFolder, WsTask, RbTask
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\TreeScopeEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\TreeScopeEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("scope")
@@ -375,7 +375,7 @@ class TaskResourceModel extends AbstractModel implements ResourceModelInterface
      * Metadata entries are isolated on per-client (application) basis
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel>")
      * @SA\SerializedName("metadata")
      *
      * @var array|MetadataModel[]|null
@@ -387,7 +387,7 @@ class TaskResourceModel extends AbstractModel implements ResourceModelInterface
      *
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\CustomFieldModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\CustomFieldModel>")
      * @SA\SerializedName("customFields")
      *
      * @var array|CustomFieldModel[]|null

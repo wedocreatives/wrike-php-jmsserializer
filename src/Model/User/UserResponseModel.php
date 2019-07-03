@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\User;
+namespace wedocreatives\WrikePhpJmsserializer\Model\User;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * User Response Model.
@@ -33,7 +33,7 @@ class UserResponseModel extends AbstractModel implements ResponseModelInterface
     /**
      * Collection of response models.
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\User\UserResourceModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\User\UserResourceModel>")
      * @SA\SerializedName("data")
      *
      * @var array|UserResourceModel]|null

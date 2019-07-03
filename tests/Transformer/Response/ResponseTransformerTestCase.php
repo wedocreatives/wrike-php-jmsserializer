@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Transformer\Response;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Transformer\Response;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Zibios\WrikePhpJmsserializer\Tests\TestCase;
-use Zibios\WrikePhpLibrary\Resource\ContactResource;
-use Zibios\WrikePhpLibrary\Transformer\ResponseTransformerInterface;
+use wedocreatives\WrikePhpJmsserializer\Tests\TestCase;
+use wedocreatives\WrikePhpLibrary\Resource\ContactResource;
+use wedocreatives\WrikePhpLibrary\Transformer\ResponseTransformerInterface;
 
 /**
  * Abstract Response Transformer Test Case.

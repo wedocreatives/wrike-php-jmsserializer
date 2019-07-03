@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Model\Invitation;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Model\Invitation;
 
-use Zibios\WrikePhpJmsserializer\Model\Invitation\InvitationResourceModel;
-use Zibios\WrikePhpJmsserializer\Tests\Model\ResourceModelTestCase;
+use wedocreatives\WrikePhpJmsserializer\Model\Invitation\InvitationResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Tests\Model\ResourceModelTestCase;
 
 /**
  * Invitation Resource Model Test.

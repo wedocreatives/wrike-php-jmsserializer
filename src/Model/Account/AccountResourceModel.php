@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Account;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Account;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel;
-use Zibios\WrikePhpJmsserializer\Model\Common\SubscriptionModel;
-use Zibios\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel;
+use wedocreatives\WrikePhpJmsserializer\Model\Common\SubscriptionModel;
+use wedocreatives\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Account Resource Model.
@@ -60,7 +60,7 @@ class AccountResourceModel extends AbstractModel implements ResourceModelInterfa
      *
      * Week Day, Enum: Sat, Sun, Mon
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\WeekDayEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\WeekDayEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("firstDayOfWeek")
@@ -75,7 +75,7 @@ class AccountResourceModel extends AbstractModel implements ResourceModelInterfa
      * These days are used in task duration computation.
      * Week Day, Enum: Sun, Mon, Tue, Wed, Thu, Fri, Sat
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\WeekDayEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\WeekDayEnum
      *
      * @SA\Type("array<string>")
      * @SA\SerializedName("workDays")
@@ -131,7 +131,7 @@ class AccountResourceModel extends AbstractModel implements ResourceModelInterfa
      *
      * Comment: Optional
      *
-     * @SA\Type("Zibios\WrikePhpJmsserializer\Model\Common\SubscriptionModel")
+     * @SA\Type("wedocreatives\WrikePhpJmsserializer\Model\Common\SubscriptionModel")
      * @SA\SerializedName("subscription")
      *
      * @var SubscriptionModel|null
@@ -146,7 +146,7 @@ class AccountResourceModel extends AbstractModel implements ResourceModelInterfa
      *
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Common\MetadataModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Common\MetadataModel>")
      * @SA\SerializedName("metadata")
      *
      * @var array|MetadataModel[]|null
@@ -159,7 +159,7 @@ class AccountResourceModel extends AbstractModel implements ResourceModelInterfa
      *
      * Comment: Optional
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\CustomField\CustomFieldResourceModel>")
      * @SA\SerializedName("customFields")
      *
      * @var array|CustomFieldResourceModel[]|null

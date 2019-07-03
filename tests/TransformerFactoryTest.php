@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests;
+namespace wedocreatives\WrikePhpJmsserializer\Tests;
 
-use Zibios\WrikePhpJmsserializer\SerializerFactory;
-use Zibios\WrikePhpJmsserializer\Transformer\Response\ResourceModelTransformer;
-use Zibios\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
-use Zibios\WrikePhpJmsserializer\TransformerFactory;
-use Zibios\WrikePhpLibrary\Transformer\ResponseTransformerInterface;
+use wedocreatives\WrikePhpJmsserializer\SerializerFactory;
+use wedocreatives\WrikePhpJmsserializer\Transformer\Response\ResourceModelTransformer;
+use wedocreatives\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
+use wedocreatives\WrikePhpJmsserializer\TransformerFactory;
+use wedocreatives\WrikePhpLibrary\Transformer\ResponseTransformerInterface;
 
 /**
  * Transformer Factory Test.

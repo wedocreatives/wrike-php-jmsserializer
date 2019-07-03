@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Attachment;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Attachment;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResourceModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResourceModelInterface;
 
 /**
  * Attachment Resource Model.
@@ -81,7 +81,7 @@ class AttachmentResourceModel extends AbstractModel implements ResourceModelInte
      *
      * Attachment Type, Enum: Wrike, Google, DropBox, Box, OneDrive
      *
-     * @see \Zibios\WrikePhpLibrary\Enum\AttachmentTypeEnum
+     * @see \wedocreatives\WrikePhpLibrary\Enum\AttachmentTypeEnum
      *
      * @SA\Type("string")
      * @SA\SerializedName("type")

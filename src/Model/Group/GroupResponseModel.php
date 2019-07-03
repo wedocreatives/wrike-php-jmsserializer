@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Model\Group;
+namespace wedocreatives\WrikePhpJmsserializer\Model\Group;
 
 use JMS\Serializer\Annotation as SA;
-use Zibios\WrikePhpJmsserializer\Model\AbstractModel;
-use Zibios\WrikePhpJmsserializer\Model\ResponseModelInterface;
+use wedocreatives\WrikePhpJmsserializer\Model\AbstractModel;
+use wedocreatives\WrikePhpJmsserializer\Model\ResponseModelInterface;
 
 /**
  * Group Response Model.
@@ -33,7 +33,7 @@ class GroupResponseModel extends AbstractModel implements ResponseModelInterface
     /**
      * Collection of response models.
      *
-     * @SA\Type("array<Zibios\WrikePhpJmsserializer\Model\Group\GroupResourceModel>")
+     * @SA\Type("array<wedocreatives\WrikePhpJmsserializer\Model\Group\GroupResourceModel>")
      * @SA\SerializedName("data")
      *
      * @var array|GroupResourceModel]|null

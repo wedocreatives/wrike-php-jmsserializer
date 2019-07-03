@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the zibios/wrike-php-jmsserializer package.
+ * This file is part of the wedocreatives/wrike-php-jmsserializer package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpJmsserializer\Tests\Model\Attachment;
+namespace wedocreatives\WrikePhpJmsserializer\Tests\Model\Attachment;
 
-use Zibios\WrikePhpJmsserializer\Model\Attachment\AttachmentResourceModel;
-use Zibios\WrikePhpJmsserializer\Tests\Model\ResourceModelTestCase;
+use wedocreatives\WrikePhpJmsserializer\Model\Attachment\AttachmentResourceModel;
+use wedocreatives\WrikePhpJmsserializer\Tests\Model\ResourceModelTestCase;
 
 /**
  * Attachment Resource Model Test.
